@@ -13,7 +13,7 @@ std::string reverseWord(std::string word) {
 std::string removeVowels(std::string word) {
     std::string result = "";
     for (char c : word) {
-        if (std::tolower(c) != 'а' && std::tolower(c) != 'е' && std::tolower(c) != 'ё' && std::tolower(c) != 'и' && std::tolower(c) != 'о' && std::tolower(c) != 'у' && std::tolower(c) != 'ы' && std::tolower(c) != 'э' && std::tolower(c) != 'ю' && std::tolower(c) != 'я') {
+        if (std::tolower(c) != 'o' &&  tolower(c) != 'i' && tolower(c) != 'u' && std::tolower(c) != 'y' && std::tolower(c) != 'e' && std::tolower(c) != 'a' && std::tolower(c) != 'O' && std::tolower(c) != 'I' && std::tolower(c) != 'U' && std::tolower(c) != 'Y' && std::tolower(c) != 'E' && std::tolower(c) != 'A') {
             result += c;
         }
     }
@@ -24,7 +24,7 @@ std::string removeVowels(std::string word) {
 std::string removeConsonants(std::string word) {
     std::string result = "";
     for (char c : word) {
-        if (!isalpha(c) || std::tolower(c) == 'а' || std::tolower(c) == 'е' || std::tolower(c) == 'ё' || std::tolower(c) == 'и' || std::tolower(c) == 'о' || std::tolower(c) == 'у' || std::tolower(c) == 'ы' || std::tolower(c) == 'э' || std::tolower(c) == 'ю' || std::tolower(c) == 'я') {
+        if (!isalpha(c) || std::tolower(c) == 'a' || std::tolower(c) == 'e' || std::tolower(c) == 'u' || std::tolower(c) == 'i' || std::tolower(c) == 'o' || std::tolower(c) == 'u' || std::tolower(c) == 'A' || std::tolower(c) == 'E' || std::tolower(c) == 'Y' || std::tolower(c) == 'U' || std::tolower(c) == 'I' || std::tolower(c) == 'O') {
             result += c;
         }
     }
@@ -76,3 +76,4 @@ int main() {
 
     return 0;
 }
+
